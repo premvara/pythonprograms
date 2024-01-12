@@ -1,0 +1,32 @@
+a = set()
+b = set()
+a.add(7)
+a.add(8)
+a.add(9)
+a.add(1)
+a.add(2)
+a.add(3)
+a.add(4)
+a.add(5)
+a.add(0)
+print(a)
+
+b.add(4)
+b.add(5)
+b.add(6)
+b.add(0)
+print(b)
+print("Is set B a subset of A -", b.issubset(a))
+
+print("to check if they have a intersection -", b.isdisjoint(a))
+a.remove(8)
+print("After removing a element from set", a)
+#b.remove(8)
+#print(b)
+
+a.discard(0)
+b.discard(0)
+print("Remove Zero from Set 1 is", a)
+print("Remove Zero from Set 2 is", b)
+
+# Find collection of both Sets
